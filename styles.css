@@ -1,0 +1,430 @@
+/* Reset des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Barre de Navigation */
+nav {
+    background: #8b692e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .logo {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Section Accueil */
+header.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+header.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+header.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+header.hero .btn {
+    background: #FF6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+header.hero .btn:hover {
+    background: #FF4500;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section#about {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+section#about h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+section#about p {
+    font-size: 18px;
+}
+
+/* Galerie de Destinations */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    padding: 10px;
+    background: #8b7a2e;
+    color: #fff;
+    font-size: 24px;
+}
+
+.gallery-item p {
+    padding: 0 10px 10px;
+    font-size: 16px;
+}
+
+/* Sections Détaillées des Destinations */
+.destination-detail {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+.destination-detail h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #8b752e;
+}
+
+.destination-detail p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Attractions */
+.attractions {
+    margin-bottom: 40px;
+}
+
+.attractions h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+.attraction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.attraction-item:hover {
+    background: #e0f7fa;
+}
+
+.attraction-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.attraction-info h4 {
+    font-size: 20px;
+    color: #8b742e;
+    margin-bottom: 5px;
+}
+
+.attraction-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Galerie d’Images avec Slider */
+.image-slider {
+    margin-bottom: 40px;
+}
+
+.image-slider h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+.image-slider .swiper-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.image-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FF6347;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FF6347;
+}
+
+/* Activités et Événements */
+.activities {
+    margin-bottom: 40px;
+}
+
+.activities h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+.activities ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.activities li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Témoignages */
+.testimonials {
+    margin-bottom: 40px;
+}
+
+.testimonials h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+.testimonial-item {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial-item span {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8b782e;
+}
+
+/* Carte Interactive */
+.map {
+    margin-bottom: 40px;
+}
+
+.map h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF6347;
+}
+
+#mapid-dakar {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+/* Formulaire de Contact */
+section#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section#contact input,
+section#contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+section#contact .btn {
+    width: 150px;
+    align-self: flex-start;
+    background: #8b7b2e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section#contact .btn:hover {
+    background: #6b5624;
+}
+
+/* Pied de Page */
+footer {
+    background: #8b6a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    nav .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        flex: 0 0 80%;
+    }
+
+    header.hero h2 {
+        font-size: 32px;
+    }
+
+    header.hero p {
+        font-size: 16px;
+    }
+
+    /* Attractions */
+    .attraction-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .attraction-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Galerie d’Images avec Slider */
+    .image-slider .swiper-container {
+        height: 200px;
+    }
+
+    /* Galerie Grid (si applicable) */
+    .gallery-grid img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%;
+    }
+
+    .image-slider .swiper-container {
+        height: 150px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+    }
+}

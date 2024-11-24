@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Sénégal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS pour la carte interactive -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Swiper CSS pour le slider d’images (optionnel) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Barre de Navigation -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">Explore Sénégal</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <header id="home">
+        <div class="hero">
+            <h2>Découvrez la Beauté du Sénégal</h2>
+            <p>Explorez les richesses culturelles et naturelles de votre pays.</p>
+            <a href="#destinations" class="btn">Commencez Maintenant</a>
+        </div>
+    </header>
+
+    <!-- Section À Propos -->
+    <section id="about">
+        <div class="container">
+            <h2>À Propos de Explore Sénégal</h2>
+            <p>Explore Sénégal est une initiative visant à promouvoir le tourisme local, à valoriser le patrimoine culturel et naturel du Sénégal, et à stimuler l'économie locale.</p>
+        </div>
+    </section>
+
+    <!-- Section Destinations -->
+    <section id="destinations">
+        <div class="container">
+            <h2>Nos Destinations</h2>
+            <div class="gallery">
+                <a href="#dakar" class="gallery-item">
+                    <img src="images/monumentdakar.jpg" alt="Dakar">
+                    <h3>Dakar</h3>
+                    <p>Découvrez la capitale vibrante avec ses sites historiques et culturels.</p>
+                </a>
+                <a href="#saint-louis" class="gallery-item">
+                    <img src="images/saintlouis.jpg" alt="Saint-Louis">
+                    <h3>Saint-Louis</h3>
+                    <p>Explorez l'architecture coloniale et les festivals culturels.</p>
+                </a>
+                <a href="#delta-saloum" class="gallery-item">
+                    <img src="images/delta saloum.jpg" alt="Delta du Saloum">
+                    <h3>Delta du Saloum</h3>
+                    <p>Profitez de la nature préservée et des écosystèmes uniques.</p>
+                </a>
+                <!-- Ajoutez plus de destinations ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections Détaillées des Destinations -->
+    
+    <!-- Section Dakar -->
+    <section id="dakar" class="destination-detail">
+        <div class="container">
+            <h2>Dakar</h2>
+            <p>Dakar, la capitale vibrante du Sénégal, est un centre culturel dynamique offrant une multitude d’attractions historiques, culturelles et naturelles.</p>
+
+            <!-- Attractions Principales -->
+            <div class="attractions">
+                <h3>Attractions Principales</h3>
+                <div class="attraction-item">
+                    <img src="images/ile de goree.jpg" alt="Île de Gorée">
+                    <div class="attraction-info">
+                        <h4>Île de Gorée</h4>
+                        <p>L’Île de Gorée est un site historique emblématique de la traite négrière, classé au patrimoine mondial de l'UNESCO.</p>
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <img src="images/monumentdakar.jpg" alt="Monument de la Renaissance Africaine">
+                    <div class="attraction-info">
+                        <h4>Monument de la Renaissance Africaine</h4>
+                        <p>Un monument impressionnant symbolisant la renaissance et l’unité de l’Afrique.</p>
+                    </div>
+                </div>
+                <div class="attraction-item">
+                    <img src="images/parc forestier.jpg" alt="Parc Forestier de Hann">
+                    <div class="attraction-info">
+                        <h4>Parc Forestier de Hann</h4>
+                        <p>Un vaste parc offrant des espaces verts, des sentiers de randonnée et une biodiversité riche.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galerie d’Images avec Slider (Optionnel) -->
+            <div class="image-slider">
+                <h3>Galerie d’Images</h3>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/dakar1.jpg" alt="Dakar 1"></div>
+                        <div class="swiper-slide"><img src="images/dakar2.jpg" alt="Dakar 2"></div>
+                        <div class="swiper-slide"><img src="images/dakar3.jpg" alt="Dakar 3"></div>
+                        <div class="swiper-slide"><img src="images/dakar4.jpg" alt="Dakar 4"></div>
+                        <div class="swiper-slide"><img src="images/dakar5.jpg" alt="Dakar 5"></div>
+                        <div class="swiper-slide"><img src="images/dakar6.jpg" alt="Dakar 6"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Activités et Événements -->
+            <div class="activities">
+                <h3>Activités et Événements</h3>
+                <ul>
+                    <li><strong>Festival de Jazz à Saint-Louis :</strong> Un événement musical incontournable célébrant le jazz et la culture sénégalaise.</li>
+                    <li><strong>Marché Sandaga :</strong> Découverte de l’artisanat local et des spécialités culinaires.</li>
+                    <li><strong>Plage de Ngor :</strong> Détente, surf et sports nautiques.</li>
+                    <li><strong>Balade en bateau :</strong> Exploration de la côte sénégalaise et coucher de soleil sur l'océan Atlantique.</li>
+                </ul>
+            </div>
+
+            <!-- Témoignages de Visiteurs -->
+            <div class="testimonials">
+                <h3>Témoignages de Visiteurs</h3>
+                <div class="testimonial-item">
+                    <p>"Dakar est une ville vibrante et accueillante. L'Île de Gorée est un lieu émouvant et riche en histoire."</p>
+                    <span>- Aissatou, Dakar</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Le Monument de la Renaissance Africaine est tout simplement spectaculaire. Une visite incontournable !"</p>
+                    <span>- Mamadou, Saint-Louis</span>
+                </div>
+            </div>
+
+            <!-- Carte Interactive -->
+            <div class="map">
+                <h3>Carte des Destinations à Dakar</h3>
+                <div id="mapid-dakar" style="height: 400px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections Détaillées pour les Autres Destinations (exemple pour Saint-Louis) -->
+    <section id="saint-louis" class="destination-detail">
+        <div class="container">
+            <h2>Saint-Louis</h2>
+            <p>Ancienne capitale coloniale, Saint-Louis est célèbre pour son architecture historique et ses festivals culturels.</p>
+            <!-- Ajoutez des sous-sections similaires à Dakar ici -->
+        </div>
+    </section>
+
+    <section id="delta-saloum" class="destination-detail">
+        <div class="container">
+            <h2>Delta du Saloum</h2>
+            <p>Profitez de la nature préservée et des écosystèmes uniques du Delta du Saloum.</p>
+            <!-- Ajoutez des sous-sections similaires à Dakar ici -->
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Explore Sénégal. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Leaflet JS pour la carte interactive -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Swiper JS pour le slider d’images (optionnel) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Votre script personnalisé -->
+    <script src="script.js"></script>
+</body>
+</html>
